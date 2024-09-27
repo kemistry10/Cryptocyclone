@@ -1,8 +1,8 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar'
 import  { Routes, Route}  from 'react-router-dom'
-import Home from './pages/home/home'
-import Coin from './pages/coin/coin'
+import Home from 'src/pages/home/Home.jsx'
+import Coin from './pages/coin/Coin'
 import Footer from './components/Footer/Footer'
 
 /* CG-ncS3A4nGb8Jmnp219qmC4vmf */
