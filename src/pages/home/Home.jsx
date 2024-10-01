@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import './Home.css'
-import { CoinContext } from '../context/CoinContext'
+import { CoinContext } from '../../context/CoinContext'
 import { Link } from 'react-router-dom' /* open another page */
 
 const Home = () => {
@@ -38,7 +38,7 @@ useEffect(() => { /* this hook gets the data from usecontext above and then disp
             <form onSubmit={searchHandler}>
                 <input onChange={inputHandler} value={input} list='coinlist' type="text" placeholder='Search crypto...' required/>
 
-                <datalist id='coinlist'>
+                <datalist id='coinlist' className="scrollable-list">
                     {allCoin.map((item, index) => (<option key={index} value={item.name} />))}
                 </datalist>
 
@@ -59,7 +59,7 @@ useEffect(() => { /* this hook gets the data from usecontext above and then disp
                         <p>{item.market_cap_rank}</p>
                         <div>
                             <img src={item.image} alt="coin-image" />
-                            <p>{item.name + "-" + item.symbol}</p>
+                            <p className="coin-image_name">{item.name + "-" + item.symbol}</p>
                         </div>
                         <p>
                             {currency.symbol} {item.current_price.toLocaleString()}

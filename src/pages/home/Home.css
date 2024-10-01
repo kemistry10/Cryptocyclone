@@ -43,6 +43,11 @@
     padding-left: 10px;
 }
 
+.scrollable-list {
+    max-height: 200px; /* Adjust height as necessary */
+    overflow-y: auto;
+  }
+
 .hero button {
     border: none;
     background: #7927ff;
@@ -111,7 +116,13 @@
     }
     .table-layout {
         font-size: 13px;
+        text-wrap: nowrap;
     }
+
+    .coin-image_name {
+        white-space: initial;
+    }
+
     .hero form input {
         width: 100px;
     }
