@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import './Navbar.css'
-import logo from '/Users/km/Desktop/Projects/Cryptocyclone/src/assets/Crpytocyclone_logo.png'
-import arrow_icon from '/Users/km/Desktop/Projects/Cryptocyclone/src/assets/arrow_icon.png'
+import arrow_icon from '/src/assets/arrow_icon.png'
 import { CoinContext } from '../../context/CoinContext'
 import { Link } from 'react-router-dom'
 
