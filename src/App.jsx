@@ -13,7 +13,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/coin/:coinID' element={<Coin/>}/>
+        {/* <Route path='/coin/:coinID' element={<Coin/>}/> */}
       </Routes>
       <Footer />
     </div>

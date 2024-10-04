@@ -55,7 +55,7 @@ useEffect(() => { /* this hook gets the data from usecontext above and then disp
             </div>
             {
                 displayCoin.slice(0, 10).map((item, index) => (
-                    <Link to={`/coin/${item.id}`} className="table-layout" key={index}> 
+                    <div to={`/coin/${item.id}`} className="table-layout" key={index}>
                         <p>{item.market_cap_rank}</p>
                         <div>
                             <img src={item.image} alt="coin-image" />
@@ -70,7 +70,7 @@ useEffect(() => { /* this hook gets the data from usecontext above and then disp
                         <p className='market-cap'>
                             {currency.symbol} {item.market_cap.toLocaleString()}
                         </p>
-                    </Link>
+                    </div>
                 ))
             }
         </div>
@@ -85,3 +85,4 @@ export default Home
 /* toLocaleString() - add commas in the number format */
 /* in the datalist part of the input section in form, this allows the user to view a list of the cryptocoins available if they didnt want to type or just wanted to pick one */
 /* Link section on table items either before or after search,  the to=..... part opens up coin page to display the data on that page */
+/* line 58, changing div to Link will go to coin pages */
